@@ -1,0 +1,9 @@
+{
+  "endpoint": "/v1/analytics",
+  "harvested_at": "2026-09-13T11:55:04.106405+00:00",
+  "records_count": 0,
+  "pages_count": 0,
+  "stop_reason": "HTTP 404",
+  "raw_batches": [],
+  "data": []
+}

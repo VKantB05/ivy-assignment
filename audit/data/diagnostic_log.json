@@ -1,0 +1,1684 @@
+{
+  "harvest_started_at": "2026-09-13T11:54:51.282389+00:00",
+  "base_url": "https://solve.ivy.homes",
+  "auth_probing": {
+    "selected_scheme": "X-API-Key + Bearer (POST /auth/login)",
+    "selected_headers": [
+      "X-API-Key",
+      "Authorization"
+    ],
+    "probe_history": [
+      {
+        "scheme": "x-api-key",
+        "headers_tested": [
+          "x-api-key"
+        ],
+        "endpoint_results": {
+          "/health": {
+            "status_code": 200,
+            "success": true
+          },
+          "/v1/listings": {
+            "status_code": 401,
+            "success": false
+          }
+        }
+      },
+      {
+        "scheme": "Authorization: Bearer",
+        "headers_tested": [
+          "Authorization"
+        ],
+        "endpoint_results": {
+          "/health": {
+            "status_code": 200,
+            "success": true
+          },
+          "/v1/listings": {
+            "status_code": 401,
+            "success": false
+          }
+        }
+      },
+      {
+        "scheme": "X-API-Key",
+        "headers_tested": [
+          "X-API-Key"
+        ],
+        "endpoint_results": {
+          "/health": {
+            "status_code": 200,
+            "success": true
+          },
+          "/v1/listings": {
+            "status_code": 401,
+            "success": false
+          }
+        }
+      },
+      {
+        "scheme": "None (No Auth Header)",
+        "headers_tested": [],
+        "endpoint_results": {
+          "/health": {
+            "status_code": 200,
+            "success": true
+          },
+          "/v1/listings": {
+            "status_code": 401,
+            "success": false
+          }
+        }
+      },
+      {
+        "scheme": "X-API-Key + Bearer (POST /auth/login)",
+        "headers_tested": [
+          "X-API-Key",
+          "Authorization"
+        ],
+        "endpoint_results": {
+          "/v1/listings": {
+            "status_code": 200,
+            "success": true
+          }
+        }
+      }
+    ]
+  },
+  "server_health": {
+    "endpoint": "/health",
+    "is_reachable": true,
+    "status_code": 200,
+    "timestamp_found": "2026-09-13T17:24:54.391318+05:30",
+    "has_ist_offset": true,
+    "detected_offset": "+05:30",
+    "clock_audit_verdict": "PASSED_IST",
+    "raw_payload": {
+      "status": "ok",
+      "server_time": "2026-09-13T17:24:54.391318+05:30",
+      "timezone": "Asia/Kolkata",
+      "reference_date": "2026-09-10T00:00:00+05:30"
+    },
+    "response_headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "135",
+      "Content-Type": "application/json",
+      "Date": "Sun, 13 Sep 2026 11:54:53 GMT"
+    }
+  },
+  "endpoints": {
+    "/v1/listings": {
+      "endpoint": "/v1/listings",
+      "status": "completed",
+      "total_pages_fetched": 77,
+      "total_records_harvested": 3850,
+      "envelope_detected": "dict.results",
+      "stop_reason": "Total count reached (3850 >= 3811)",
+      "pages": [
+        {
+          "page": 1,
+          "offset": 0,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 0,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 2,
+          "offset": 50,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 50,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 3,
+          "offset": 100,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 100,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 4,
+          "offset": 150,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 150,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 5,
+          "offset": 200,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 200,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 6,
+          "offset": 250,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 250,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 7,
+          "offset": 300,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 300,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 8,
+          "offset": 350,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 350,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 9,
+          "offset": 400,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 400,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 10,
+          "offset": 450,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 450,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 11,
+          "offset": 500,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 500,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 12,
+          "offset": 550,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 550,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 13,
+          "offset": 600,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 600,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 14,
+          "offset": 650,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 650,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 15,
+          "offset": 700,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 700,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 16,
+          "offset": 750,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 750,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 17,
+          "offset": 800,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 800,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 18,
+          "offset": 850,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 850,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 19,
+          "offset": 900,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 900,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 20,
+          "offset": 950,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 950,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 21,
+          "offset": 1000,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1000,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 22,
+          "offset": 1050,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1050,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 23,
+          "offset": 1100,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1100,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 24,
+          "offset": 1150,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1150,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 25,
+          "offset": 1200,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1200,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 26,
+          "offset": 1250,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1250,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 27,
+          "offset": 1300,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1300,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 28,
+          "offset": 1350,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1350,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 29,
+          "offset": 1400,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1400,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 30,
+          "offset": 1450,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1450,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 31,
+          "offset": 1500,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1500,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 32,
+          "offset": 1550,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1550,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 33,
+          "offset": 1600,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1600,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 34,
+          "offset": 1650,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1650,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 35,
+          "offset": 1700,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1700,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 36,
+          "offset": 1750,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1750,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 37,
+          "offset": 1800,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1800,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 38,
+          "offset": 1850,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1850,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 39,
+          "offset": 1900,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1900,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 40,
+          "offset": 1950,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1950,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 41,
+          "offset": 2000,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2000,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 42,
+          "offset": 2050,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2050,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 43,
+          "offset": 2100,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2100,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 44,
+          "offset": 2150,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2150,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 45,
+          "offset": 2200,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2200,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 46,
+          "offset": 2250,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2250,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 47,
+          "offset": 2300,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2300,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 48,
+          "offset": 2350,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2350,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 49,
+          "offset": 2400,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2400,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 50,
+          "offset": 2450,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2450,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 51,
+          "offset": 2500,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2500,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 52,
+          "offset": 2550,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2550,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 53,
+          "offset": 2600,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2600,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 54,
+          "offset": 2650,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2650,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 55,
+          "offset": 2700,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2700,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 56,
+          "offset": 2750,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2750,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 57,
+          "offset": 2800,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2800,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 58,
+          "offset": 2850,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2850,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 59,
+          "offset": 2900,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2900,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 60,
+          "offset": 2950,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 2950,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 61,
+          "offset": 3000,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3000,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 62,
+          "offset": 3050,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3050,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 63,
+          "offset": 3100,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3100,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 64,
+          "offset": 3150,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3150,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 65,
+          "offset": 3200,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3200,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 66,
+          "offset": 3250,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3250,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 67,
+          "offset": 3300,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3300,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 68,
+          "offset": 3350,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3350,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 69,
+          "offset": 3400,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3400,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 70,
+          "offset": 3450,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3450,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 71,
+          "offset": 3500,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3500,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 72,
+          "offset": 3550,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3550,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 73,
+          "offset": 3600,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3600,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 74,
+          "offset": 3650,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3650,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 75,
+          "offset": 3700,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3700,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 76,
+          "offset": 3750,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3750,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 77,
+          "offset": 3800,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 3800,
+            "count": 50,
+            "total": 3811,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        }
+      ]
+    },
+    "/v1/rentals": {
+      "endpoint": "/v1/rentals",
+      "status": "completed",
+      "total_pages_fetched": 29,
+      "total_records_harvested": 1450,
+      "envelope_detected": "dict.results",
+      "stop_reason": "Total count reached (1450 >= 1441)",
+      "pages": [
+        {
+          "page": 1,
+          "offset": 0,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 0,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 2,
+          "offset": 50,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 50,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 3,
+          "offset": 100,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 100,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 4,
+          "offset": 150,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 150,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 5,
+          "offset": 200,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 200,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 6,
+          "offset": 250,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 250,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 7,
+          "offset": 300,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 300,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 8,
+          "offset": 350,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 350,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 9,
+          "offset": 400,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 400,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 10,
+          "offset": 450,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 450,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 11,
+          "offset": 500,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 500,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 12,
+          "offset": 550,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 550,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 13,
+          "offset": 600,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 600,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 14,
+          "offset": 650,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 650,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 15,
+          "offset": 700,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 700,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 16,
+          "offset": 750,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 750,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 17,
+          "offset": 800,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 800,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 18,
+          "offset": 850,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 850,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 19,
+          "offset": 900,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 900,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 20,
+          "offset": 950,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 950,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 21,
+          "offset": 1000,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1000,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 22,
+          "offset": 1050,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1050,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 23,
+          "offset": 1100,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1100,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 24,
+          "offset": 1150,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1150,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 25,
+          "offset": 1200,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1200,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 26,
+          "offset": 1250,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1250,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 27,
+          "offset": 1300,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1300,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 28,
+          "offset": 1350,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1350,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 29,
+          "offset": 1400,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 1400,
+            "count": 50,
+            "total": 1441,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        }
+      ]
+    },
+    "/v1/projects": {
+      "endpoint": "/v1/projects",
+      "status": "completed",
+      "total_pages_fetched": 9,
+      "total_records_harvested": 450,
+      "envelope_detected": "dict.results",
+      "stop_reason": "Total count reached (450 >= 428)",
+      "pages": [
+        {
+          "page": 1,
+          "offset": 0,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 0,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 2,
+          "offset": 50,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 50,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 3,
+          "offset": 100,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 100,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 4,
+          "offset": 150,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 150,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 5,
+          "offset": 200,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 200,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 6,
+          "offset": 250,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 250,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 7,
+          "offset": 300,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 300,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 8,
+          "offset": 350,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 350,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        },
+        {
+          "page": 9,
+          "offset": 400,
+          "records_in_batch": 50,
+          "meta": {
+            "limit": 50,
+            "offset": 400,
+            "count": 50,
+            "total": 428,
+            "has_more": true,
+            "envelope_type": "dict.results"
+          }
+        }
+      ]
+    },
+    "/v1/localities": {
+      "endpoint": "/v1/localities",
+      "status": "completed",
+      "total_pages_fetched": 1,
+      "total_records_harvested": 10,
+      "envelope_detected": "dict.results",
+      "stop_reason": "Batch size (10) < requested limit (50)",
+      "pages": [
+        {
+          "page": 1,
+          "offset": 0,
+          "records_in_batch": 10,
+          "meta": {
+            "city": "chennai",
+            "count": 10,
+            "envelope_type": "dict.results"
+          }
+        }
+      ]
+    },
+    "/v1/analytics": {
+      "endpoint": "/v1/analytics",
+      "status": "empty_or_failed",
+      "total_pages_fetched": 0,
+      "total_records_harvested": 0,
+      "envelope_detected": null,
+      "stop_reason": "HTTP 404",
+      "pages": []
+    }
+  },
+  "discrepancies": [
+    {
+      "timestamp": "2026-09-13T11:55:04.106205+00:00",
+      "endpoint": "/v1/analytics",
+      "issue_type": "NON_200_STATUS",
+      "status_code": 404,
+      "message": "Endpoint returned HTTP 404 at offset 0",
+      "details": {
+        "params": {
+          "offset": 0,
+          "limit": 50,
+          "page": 1
+        },
+        "response_sample": "{\"detail\":\"Not Found\"}"
+      }
+    }
+  ],
+  "harvest_completed_at": "2026-09-13T11:55:04.107681+00:00",
+  "status": "completed"
+}

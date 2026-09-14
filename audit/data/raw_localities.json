@@ -1,0 +1,97 @@
+{
+  "endpoint": "/v1/localities",
+  "harvested_at": "2026-09-13T11:55:04.046145+00:00",
+  "records_count": 10,
+  "pages_count": 1,
+  "stop_reason": "Batch size (10) < requested limit (50)",
+  "raw_batches": [
+    {
+      "city": "chennai",
+      "count": 10,
+      "results": [
+        {
+          "locality": "guindy",
+          "listing_count": 454
+        },
+        {
+          "locality": "thoraipakkam",
+          "listing_count": 442
+        },
+        {
+          "locality": "anna nagar",
+          "listing_count": 428
+        },
+        {
+          "locality": "porur",
+          "listing_count": 426
+        },
+        {
+          "locality": "velachery",
+          "listing_count": 424
+        },
+        {
+          "locality": "t nagar",
+          "listing_count": 417
+        },
+        {
+          "locality": "perungudi",
+          "listing_count": 412
+        },
+        {
+          "locality": "adyar",
+          "listing_count": 381
+        },
+        {
+          "locality": "omr",
+          "listing_count": 375
+        },
+        {
+          "locality": "tambaram",
+          "listing_count": 341
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "locality": "guindy",
+      "listing_count": 454
+    },
+    {
+      "locality": "thoraipakkam",
+      "listing_count": 442
+    },
+    {
+      "locality": "anna nagar",
+      "listing_count": 428
+    },
+    {
+      "locality": "porur",
+      "listing_count": 426
+    },
+    {
+      "locality": "velachery",
+      "listing_count": 424
+    },
+    {
+      "locality": "t nagar",
+      "listing_count": 417
+    },
+    {
+      "locality": "perungudi",
+      "listing_count": 412
+    },
+    {
+      "locality": "adyar",
+      "listing_count": 381
+    },
+    {
+      "locality": "omr",
+      "listing_count": 375
+    },
+    {
+      "locality": "tambaram",
+      "listing_count": 341
+    }
+  ]
+}
