@@ -14,10 +14,10 @@ The `submission.json` file is located at the root of this repository:
 {
   "api_key": "IVY26-4A08D7ACF34F",
   "candidate": {
-    "name": "Ivy Candidate",
-    "email": "candidate@ivy.homes",
+    "name": "Vishnukant Bagri",
+    "email": "vishnukantbagri@gmail.com",
     "repo_url": "https://github.com/candidate/ivy-assignment",
-    "demo_url": "https://ivy-assignment-frontend.vercel.app"
+    "demo_url": "https://ivy-assignment-zeta.vercel.app/listings"
   },
   "answers": {
     "total_listing_records": 3850,
